@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="form-box">
+      <form name="form" action="#">
+        <div>
+          <label for="name">Имя</label>
+          <input required name="firstName" id="name" type="text" />
+        </div>
+        <div>
+          <label for="age">Возраст</label>
+          <input required name="age" id="age" type="number" />
+        </div>
+        <button class="btn">Добавить</button>
+      </form>
+    </div>
+
+    <div class="wrapper">
+      <div class="wrap-item">
+        <h2>Люди до 25</h2>
+        <div id="twenty-five" class="item-box">
+
+        </div>
+      </div>
+      <div class="divider"></div>
+      <div class="wrap-item">
+        <h2>Люди до 50</h2>
+        <div id="fifty" class="item-box">
+
+        </div>
+      </div>
+      <div class="divider"></div>
+
+      <div class="wrap-item">
+        <h2>Остальные</h2>
+        <div id="others" class="item-box">
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <form name="change_form">
+        <label>Имя</label>
+        <input name="firstName" type="text" id="change_name" required>
+        <label>Возраст</label>
+        <input name="age" type="number" id="change_age" required>
+        <button type="submit">Сохранить</button>
+      </form>
+    </div>
+  </div>
+
+  <script type="module" src="./js/script.js"></script>
+</body>
+
+</html>
